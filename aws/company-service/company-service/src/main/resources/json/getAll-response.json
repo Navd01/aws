@@ -1,0 +1,84 @@
+{
+	[
+     {
+        "id": 1,
+        "companyCode": "CC01",
+        "companyName": "CTS",
+        "companyCEO": "Naveed",
+        "companyTurnover": 1000000000,
+        "companyWebsite": "https://www.fsfds.com",
+        "stockExchange": "exchanged",
+        "latestStockPrice": 1.0
+    },
+    {
+        "id": 2,
+        "companyCode": "CC03",
+        "companyName": "Naeed",
+        "companyCEO": "Naveed",
+        "companyTurnover": 100000000000,
+        "companyWebsite": "https://www.naveed.com",
+        "stockExchange": "exchanged",
+        "latestStockPrice": 331.0
+    },
+    {
+        "id": 3,
+        "companyCode": "CC05",
+        "companyName": "Tabassum",
+        "companyCEO": "Tabassum",
+        "companyTurnover": 100000000000,
+        "companyWebsite": "https://www.tabassum.com",
+        "stockExchange": "exchanged",
+        "latestStockPrice": 44.0
+    },
+    {
+        "id": 4,
+        "companyCode": "CC09",
+        "companyName": "CTS",
+        "companyCEO": "Naveed",
+        "companyTurnover": 1000000000,
+        "companyWebsite": "https://www.fsfds.com",
+        "stockExchange": "exchanged",
+        "latestStockPrice": null
+    },
+    {
+        "id": 5,
+        "companyCode": "CCX1",
+        "companyName": "CTS",
+        "companyCEO": "Naveed",
+        "companyTurnover": 1000000000,
+        "companyWebsite": "https://www.fsfds.com",
+        "stockExchange": "exchanged",
+        "latestStockPrice": null
+    },
+    {
+        "id": 6,
+        "companyCode": "CCX2",
+        "companyName": "CTS",
+        "companyCEO": "Naveed",
+        "companyTurnover": 1000000000,
+        "companyWebsite": "https://www.fsfds.com",
+        "stockExchange": "exchanged",
+        "latestStockPrice": null
+    },
+    {
+        "id": 7,
+        "companyCode": "CCX3",
+        "companyName": "CTS",
+        "companyCEO": "Naveed",
+        "companyTurnover": 1000000000,
+        "companyWebsite": "https://www.fsfds.com",
+        "stockExchange": "exchanged",
+        "latestStockPrice": null
+    },
+    {
+        "id": 8,
+        "companyCode": "CCX5",
+        "companyName": "CTS",
+        "companyCEO": "Naveed",
+        "companyTurnover": 1000000000,
+        "companyWebsite": "https://www.fsfds.com",
+        "stockExchange": "exchanged",
+        "latestStockPrice": null
+    }
+]
+}
