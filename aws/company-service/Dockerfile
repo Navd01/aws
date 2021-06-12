@@ -1,6 +1,6 @@
-FROM openjdk:8
+FROM java:8
 VOLUME /tmp
+ADD company-service/target/company-service-0.0.1-SNAPSHOT.jar company-service.jar
 EXPOSE 8081
-ADD target/*.jar company-service.jar
 RUN bash -c 'touch /app.jar'
-ENTRYPOINT [ "java","-jar","/company-service.jar" ]
+ENTRYPOINT [ "java","-Djava.security.egd=file:/dev/./urandom","-jar","/company-service.jar" ]

@@ -24,7 +24,7 @@ public class CompanyServiceApplication {
     // Bean to read in the json file and and save it to the Mysfits list
     CommandLineRunner runner(CompanyService companyService) {
         return args -> {
-            String jsonFile = "/json/mysfits-response.json";
+            String jsonFile = "/json/getAll-response.json";
             ObjectMapper jsonMapper = new ObjectMapper();
             InputStream inputStream = TypeReference.class.getResourceAsStream(jsonFile);
 

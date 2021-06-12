@@ -1,17 +1,17 @@
 {
-  "family": "mythicalmysfitsservice",
+  "family": "companyservice",
   "cpu": "256",
   "memory": "512",
   "networkMode": "awsvpc",
   "requiresCompatibilities": [
     "FARGATE"
   ],
-  "executionRoleArn": "REPLACE_ME_ECS_SERVICE_ROLE_ARN",
-  "taskRoleArn": "REPLACE_ME_ECS_TASK_ROLE_ARN",
+  "executionRoleArn": "arn:aws:iam::524898481748:role/CompanyServiceCoreStack-EcsServiceRole-1DYKUTUYHSXVZ",
+  "taskRoleArn": "arn:aws:iam::524898481748:role/CompanyServiceCoreStack-ECSTaskRole-13BAA7K7MQGFT",
   "containerDefinitions": [
     {
-      "name": "MythicalMysfits-Service",
-      "image": "REPLACE_ME_IMAGE_TAG_USED_IN_ECR_PUSH",
+      "name": "Company-Service",
+      "image": "524898481748.dkr.ecr.ap-south-1.amazonaws.com/company-service/service:latest",
       "portMappings": [
         {
           "containerPort": 8080,
@@ -21,9 +21,9 @@
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
-          "awslogs-group": "mythicalmysfits-logs",
-          "awslogs-region": "REPLACE_ME_REGION",
-          "awslogs-stream-prefix": "awslogs-mythicalmysfits-service"
+          "awslogs-group": "company-service-logs",
+          "awslogs-region": "ap-south-1",
+          "awslogs-stream-prefix": "awslogs-company-service"
         }
       },
       "essential": true
