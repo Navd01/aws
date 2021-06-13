@@ -14,30 +14,11 @@
       "AttributeName": "companyCode",
       "AttributeType": "S"
     },
-    {
-      "AttributeName": "companyName",
-      "AttributeType": "S"
-    },
 	{
       "AttributeName": "companyCEO",
       "AttributeType": "S"
-    },
-	{
-      "AttributeName": "companyTurnover",
-      "AttributeType": "N"
-    },
-	{
-      "AttributeName": "companyWebsite",
-      "AttributeType": "S"
-    },
-	{
-      "AttributeName": "stockExchange",
-      "AttributeType": "S"
-    },
-	{
-      "AttributeName": "latestStockPrice",
-      "AttributeType": "N"
     }
+
   ],
   "KeySchema": [
     {

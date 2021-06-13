@@ -6,8 +6,8 @@
   "requiresCompatibilities": [
     "FARGATE"
   ],
-  "executionRoleArn": "arn:aws:iam::524898481748:role/CompanyServiceCoreStack-EcsServiceRole-1DYKUTUYHSXVZ",
-  "taskRoleArn": "arn:aws:iam::524898481748:role/CompanyServiceCoreStack-ECSTaskRole-13BAA7K7MQGFT",
+  "executionRoleArn": "arn:aws:iam::524898481748:role/CompanyServiceCoreStack-EcsServiceRole-MV4WBP94MW1C",
+  "taskRoleArn": "arn:aws:iam::524898481748:role/CompanyServiceCoreStack-ECSTaskRole-1QY7T6LO75VKH",
   "containerDefinitions": [
     {
       "name": "Company-Service",

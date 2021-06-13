@@ -11,11 +11,11 @@
     "awsvpcConfiguration": {
       "assignPublicIp": "DISABLED",
       "securityGroups": [
-        "sg-0e455806b605fdc7b"
+        "sg-012b2bc35e01288d1"
       ],
       "subnets": [
-        "subnet-0d1a52972ac26b3d7",
-        "subnet-0628693bd81f93147"
+        "subnet-081b18935446ec258",
+        "subnet-0ea68a9fb1fc32b95"
       ]
     }
   },
@@ -24,7 +24,7 @@
     {
       "containerName": "Company-Service",
       "containerPort": 8080,
-      "targetGroupArn": "arn:aws:elasticloadbalancing:ap-south-1:524898481748:targetgroup/CompanyService-TargetGroup/e9e4e96862d9c3ee"
+      "targetGroupArn": "arn:aws:elasticloadbalancing:ap-south-1:524898481748:targetgroup/CompanyService01-TargetGroup/07d8bb3846917921"
     }
   ]
 }
