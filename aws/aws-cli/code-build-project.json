@@ -1,5 +1,5 @@
 {
-  "name": "CompanyServiceCodeBuildProject01",
+  "name": "StockServiceCodeBuildProject",
   "artifacts": {
     "type": "no_artifacts"
   },
@@ -22,6 +22,6 @@
   "serviceRole": "arn:aws:iam::524898481748:role/MythicalMysfitsServiceCodeBuildServiceRole",
   "source": {
     "type": "CODECOMMIT",
-    "location": "https://git-codecommit.ap-south-1.amazonaws.com/v1/repos/CompanyService-Repository01"
+    "location": "https://git-codecommit.ap-south-1.amazonaws.com/v1/repos/StockService-Repository"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "TableName": "CompanyTable",
+  "TableName": "StockTable",
   "ProvisionedThroughput": {
     "ReadCapacityUnits": 3,
     "WriteCapacityUnits": 3
@@ -15,7 +15,7 @@
       "AttributeType": "S"
     },
 	{
-      "AttributeName": "companyCEO",
+      "AttributeName": "stockPrice",
       "AttributeType": "S"
     }
 
@@ -48,10 +48,10 @@
       }
     },
     {
-      "IndexName": "companyCEOIndex",
+      "IndexName": "stockPriceIndex",
       "KeySchema": [
         {
-          "AttributeName": "companyCEO",
+          "AttributeName": "stockPrice",
           "KeyType": "HASH"
         },
         {

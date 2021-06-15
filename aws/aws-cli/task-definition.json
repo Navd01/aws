@@ -1,5 +1,5 @@
 {
-  "family": "companyservice",
+  "family": "stockservice",
   "cpu": "256",
   "memory": "512",
   "networkMode": "awsvpc",
@@ -10,20 +10,20 @@
   "taskRoleArn": "arn:aws:iam::524898481748:role/CompanyServiceCoreStack-ECSTaskRole-1QY7T6LO75VKH",
   "containerDefinitions": [
     {
-      "name": "Company-Service",
-      "image": "524898481748.dkr.ecr.ap-south-1.amazonaws.com/company-service/service:latest",
+      "name": "Stock-Service",
+      "image": "524898481748.dkr.ecr.ap-south-1.amazonaws.com/stock-service/service:latest",
       "portMappings": [
         {
-          "containerPort": 8080,
+          "containerPort": 8081,
           "protocol": "http"
         }
       ],
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
-          "awslogs-group": "company-service-logs",
+          "awslogs-group": "stock-service-logs",
           "awslogs-region": "ap-south-1",
-          "awslogs-stream-prefix": "awslogs-company-service"
+          "awslogs-stream-prefix": "awslogs-stock-service"
         }
       },
       "essential": true

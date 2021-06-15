@@ -1,6 +1,6 @@
 {
-  "serviceName": "Company-Service",
-  "cluster": "CompanyService-Cluster",
+  "serviceName": "Stock-Service",
+  "cluster": "StockService-Cluster",
   "launchType": "FARGATE",
   "deploymentConfiguration": {
     "maximumPercent": 200,
@@ -19,12 +19,12 @@
       ]
     }
   },
-  "taskDefinition": "companyservice",
+  "taskDefinition": "stockservice",
   "loadBalancers": [
     {
-      "containerName": "Company-Service",
-      "containerPort": 8080,
-      "targetGroupArn": "arn:aws:elasticloadbalancing:ap-south-1:524898481748:targetgroup/CompanyService01-TargetGroup/07d8bb3846917921"
+      "containerName": "Stock-Service",
+      "containerPort": 8081,
+      "targetGroupArn": "arn:aws:elasticloadbalancing:ap-south-1:524898481748:targetgroup/StockService-TargetGroup/db8c8b180fd5c7c3"
     }
   ]
 }

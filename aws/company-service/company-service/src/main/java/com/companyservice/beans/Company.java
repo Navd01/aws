@@ -1,10 +1,14 @@
 package com.companyservice.beans;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBHashKey;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
 
+@DynamoDBTable(tableName="CompanyTable")
 public class Company {
 	
 
 	
-	private long id;
+	private String id;
 	
 	
 	private String companyCode;
@@ -16,7 +20,7 @@ public class Company {
 	private String companyCEO;
 	
 	
-	private long companyTurnover;
+	private String companyTurnover;
 	
 	
 	private String companyWebsite;
@@ -24,14 +28,14 @@ public class Company {
 	
 	private String stockExchange;
 	
-	private Double latestStockPrice;
+	private String latestStockPrice;
 
 	public Company() {
 		
 	}
 
-	public Company(long id, String companyCode, String companyName, String companyCEO, long companyTurnover,
-			String companyWebsite, String stockExchange, Double latestStockPrice) {
+	public Company(String id, String companyCode, String companyName, String companyCEO, String companyTurnover,
+			String companyWebsite, String stockExchange, String latestStockPrice) {
 		
 		this.id = id;
 		this.companyCode = companyCode;
@@ -42,15 +46,17 @@ public class Company {
 		this.stockExchange = stockExchange;
 		this.latestStockPrice = latestStockPrice;
 	}
-
-	public long getId() {
+	
+	@DynamoDBHashKey(attributeName="id")
+	public String getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(String id) {
 		this.id = id;
 	}
-
+	
+	@DynamoDBAttribute(attributeName="companyCode")
 	public String getCompanyCode() {
 		return companyCode;
 	}
@@ -59,6 +65,7 @@ public class Company {
 		this.companyCode = companyCode;
 	}
 
+	@DynamoDBAttribute(attributeName="companyName")
 	public String getCompanyName() {
 		return companyName;
 	}
@@ -66,7 +73,8 @@ public class Company {
 	public void setCompanyName(String companyName) {
 		this.companyName = companyName;
 	}
-
+	
+	@DynamoDBAttribute(attributeName="companyCEO")
 	public String getCompanyCEO() {
 		return companyCEO;
 	}
@@ -74,15 +82,18 @@ public class Company {
 	public void setCompanyCEO(String companyCEO) {
 		this.companyCEO = companyCEO;
 	}
-
-	public long getCompanyTurnover() {
+	
+	
+	@DynamoDBAttribute(attributeName="companyTurnover")
+	public String getCompanyTurnover() {
 		return companyTurnover;
 	}
 
-	public void setCompanyTurnover(long companyTurnover) {
+	public void setCompanyTurnover(String companyTurnover) {
 		this.companyTurnover = companyTurnover;
 	}
-
+	
+	@DynamoDBAttribute(attributeName="companyWebsite")
 	public String getCompanyWebsite() {
 		return companyWebsite;
 	}
@@ -90,7 +101,8 @@ public class Company {
 	public void setCompanyWebsite(String companyWebsite) {
 		this.companyWebsite = companyWebsite;
 	}
-
+	
+	@DynamoDBAttribute(attributeName="stockExchange")
 	public String getStockExchange() {
 		return stockExchange;
 	}
@@ -98,12 +110,13 @@ public class Company {
 	public void setStockExchange(String stockExchange) {
 		this.stockExchange = stockExchange;
 	}
-
-	public Double getLatestStockPrice() {
+	
+	@DynamoDBAttribute(attributeName="latestStockPrice")
+	public String getLatestStockPrice() {
 		return latestStockPrice;
 	}
 
-	public void setLatestStockPrice(Double latestStockPrice) {
+	public void setLatestStockPrice(String latestStockPrice) {
 		this.latestStockPrice = latestStockPrice;
 	}
 	

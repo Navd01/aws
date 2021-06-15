@@ -1,0 +1,44 @@
+{
+    "StockTable": [{
+            "PutRequest": {
+                "Item": {
+                    "companyCode": {
+                        "S": "xx01"
+                    },
+                    "stockPrice": {
+                        "S": "33.02"
+                    }
+                    
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "companyCode": {
+                        "S": "xx01"
+                    },
+                    "stockPrice": {
+                        "S": "39.02"
+                    }
+                    
+                }
+            }
+        }
+        
+        {
+            "PutRequest": {
+                "Item": {
+                    "companyCode": {
+                        "S": "xx02"
+                    },
+                    "stockPrice": {
+                        "S": "49.02"
+                    }
+                    
+                }
+            }
+        }
+   
+    ]
+}

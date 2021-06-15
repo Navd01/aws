@@ -3,7 +3,7 @@
             "PutRequest": {
                 "Item": {
                     "id": {
-                        "N": "1"
+                        "S": "1"
                     },
                     "companyCode": {
                         "S": "xx01"
@@ -15,7 +15,7 @@
                         "S": "Naveed"
                     },
                     "companyTurnover": {
-                        "N": "10000000000"
+                        "S": "10000000000"
                     },
                     "companyWebsite": {
                         "S": "http://www.tcs.com"
@@ -24,7 +24,7 @@
                         "S": "Exchanged"
                     },
                     "latestStockPrice": {
-                        "N": "33.02"
+                        "S": "33.02"
                     }
                     
                 }
@@ -34,7 +34,7 @@
             "PutRequest": {
                 "Item": {
                     "id": {
-                        "N": "2"
+                        "S": "2"
                     },
                     "companyCode": {
                         "S": "xx02"
@@ -46,7 +46,7 @@
                         "S": "Naveed"
                     },
                     "companyTurnover": {
-                        "N": "100000000000"
+                        "S": "100000000000"
                     },
                     "companyWebsite": {
                         "S": "http://www.tcs.com"
@@ -55,7 +55,7 @@
                         "S": "Exchanged"
                     },
                     "latestStockPrice": {
-                        "N": "77.98"
+                        "S": "77.98"
                     }
                     
                 }
@@ -65,7 +65,7 @@
             "PutRequest": {
                 "Item": {
                     "id": {
-                        "N": "3"
+                        "S": "3"
                     },
                     "companyCode": {
                         "S": "xx03"
@@ -77,7 +77,7 @@
                         "S": "Naveed"
                     },
                     "companyTurnover": {
-                        "N": "100000000000"
+                        "S": "100000000000"
                     },
                     "companyWebsite": {
                         "S": "http://www.tcs.com"
@@ -96,7 +96,7 @@
             "PutRequest": {
                 "Item": {
                     "id": {
-                        "N": "4"
+                        "S": "4"
                     },
                     "companyCode": {
                         "S": "xx04"
@@ -108,7 +108,7 @@
                         "S": "Naveed"
                     },
                     "companyTurnover": {
-                        "N": "100000000000"
+                        "S": "100000000000"
                     },
                     "companyWebsite": {
                         "S": "http://www.tcs.com"

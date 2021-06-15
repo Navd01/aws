@@ -2,7 +2,7 @@
 	"allCompanies" :[
      {
         "id": 1,
-        "companyCode": "CC01",
+        "companyCode": "xx01",
         "companyName": "CTS",
         "companyCEO": "Naveed",
         "companyTurnover": 1000000000,

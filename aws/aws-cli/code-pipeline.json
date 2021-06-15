@@ -1,6 +1,6 @@
 {
   "pipeline": {
-      "name": "CompanyServiceCICDPipeline01",
+      "name": "StockServiceCICDPipeline",
       "roleArn": "arn:aws:iam::524898481748:role/MythicalMysfitsServiceCodePipelineServiceRole",
       "stages": [
         {
@@ -19,12 +19,12 @@
               },
               "outputArtifacts": [
                 {
-                  "name": "CompanyService01-SourceArtifact"
+                  "name": "StockService-SourceArtifact"
                 }
               ],
               "configuration": {
                 "BranchName": "master",
-                "RepositoryName": "CompanyService-Repository01"
+                "RepositoryName": "StockService-Repository"
               },
               "runOrder": 1
             }
@@ -43,16 +43,16 @@
               },
               "outputArtifacts": [
                 {
-                  "name": "CompanyService01-BuildArtifact"
+                  "name": "StockService-BuildArtifact"
                 }
               ],
               "inputArtifacts": [
                 {
-                  "name": "CompanyService01-SourceArtifact"
+                  "name": "StockService-SourceArtifact"
                 }
               ],
               "configuration": {
-                "ProjectName": "CompanyServiceCodeBuildProject01"
+                "ProjectName": "StockServiceCodeBuildProject"
               },
               "runOrder": 1
             }
@@ -71,12 +71,12 @@
               },
               "inputArtifacts": [
                 {
-                  "name": "CompanyService01-BuildArtifact"
+                  "name": "StockService-BuildArtifact"
                 }
               ],
               "configuration": {
-                "ClusterName": "CompanyService-Cluster",
-                "ServiceName": "Company-Service",
+                "ClusterName": "StockService-Cluster",
+                "ServiceName": "Stock-Service",
                 "FileName": "imagedefinitions.json"
               }
             }
